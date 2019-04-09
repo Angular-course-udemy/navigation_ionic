@@ -1,0 +1,8 @@
+export { PrincipalPage } from './principal/principal'
+export { AjustesPage } from './ajustes/ajustes'
+export { Ajustes2Page } from './ajustes2/ajustes2'
+export { HomePage } from './home/home'
+export { ModalPage } from './modal/modal'
+export { Page2Page } from './page2/page2'
+export { Page3Page } from './page3/page3'
+export { TabsPage } from './tabs/tabs'
