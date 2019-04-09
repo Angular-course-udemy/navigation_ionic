@@ -6,4 +6,22 @@
 
 <ion-content padding>
   <h3>{{mutante.poder}}</h3>
+  <button ion-button
+    block
+    color="primary"
+    (click)="goBack()">
+    Go back with event
+  </button>
+  <button ion-button
+    block
+    color="secondary"
+    (click)="goToRoot()">
+    Go back to Root
+  </button>
+  <button ion-button
+    block
+    color="danger"
+    navPop>
+    Go back withput event
+  </button>
 </ion-content>

@@ -8,6 +8,8 @@ import { Page3Page } from '../index.pages';
 })
 export class Page2Page {
 
+  page3: any = Page3Page
+
   mutantes:any[] = [
     { nombre: 'Magneto',
       poder: 'Controlar metales'
