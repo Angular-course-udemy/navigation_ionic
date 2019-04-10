@@ -25,6 +25,10 @@ export class AjustesPage {
   showModal(){
     let modal = this.modalCtrl.create(ModalPage, { name: 'Pingu'})
     modal.present()
+    modal.onDidDismiss(params => {
+      console.log('Data modal')
+      console.log(params)
+    })
   }
 
 }

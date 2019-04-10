@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, MenuController } from 'ionic-angular';
 import { Page2Page } from '../index.pages'
 
 @Component({
@@ -10,11 +10,16 @@ export class PrincipalPage {
   
   goToPage2:any = Page2Page
 
-  constructor(public navCtrl: NavController) {
+  constructor(
+    public navCtrl: NavController,
+    private menuCtrl: MenuController) {
   }
 
   navigateTo() {
     this.navCtrl.push(Page2Page)
+  }
+  showMenu() {
+    this.menuCtrl.toggle()
   }
 
 }

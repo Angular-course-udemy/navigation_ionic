@@ -21,11 +21,20 @@ export class ModalPage {
   }
 
   closeWithParams() {
-    this.viewCtrl.dismiss()
+    let data = {
+      name: 'Pingu',
+      age: 15,
+      coords: {
+        lat: 10,
+        lng: -10
+      }
+    }
+
+    this.viewCtrl.dismiss(data)
   }
-
+  
   closeWithoutParams() {
-
+    this.viewCtrl.dismiss()
   }
 
 }
